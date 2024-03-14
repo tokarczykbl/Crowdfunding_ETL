@@ -9,8 +9,8 @@ This repository contains materials for Module 13 of the UNC Data Analytics Progr
 - Creating new data frames via column manipulation and merging using pandas.
 - Utilizing JSON and Regex techniques to create a contacts data frame parsed out from source data.
 - Converting all dataframes to CSV for loading into PostgreSQL databases.
-- Creating SQL database schema for proper creation of tables and relationsips.
-- Building SQL quiries to check table loads were valid.
+- Creating SQL database schema for proper creation of tables and relationships.
+- Building SQL queries to check table loads were valid.
 - Utilizing [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) to create an ERD visualization schema.
 
 ### Files Included
