@@ -15,23 +15,24 @@ This repository contains materials for Module 13 of the UNC Data Analytics Progr
 
 ### Files Included
 
-- **ETL_Mini_Project_BTokarczyk_JGuinn.ipynb**: Jupyter Notebook which contains all code to load in xlsx files, create dataframes, manipulate data and create csv files.
-- **ERD.Model.png**: Image file of ERD schema created on [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/).
-- **crowdfund_db_schema.sql**: SQL file for tables creating and joining of data into PostgreSQL.  Queries are included for checking table data.
-- **02-project.md**: Course provided instructions for completion of project
-- `Resources` folder contains cleaned csv files for PostgreSQL loading and provided source data in xlsx format for anlysis
-- 
+- **ETL_Mini_Project_BTokarczyk_JGuinn.ipynb**: Jupyter Notebook containing all the code necessary to load xlsx files, create dataframes, manipulate data, and create csv files.
+- **ERD.Model.png**: Image file of the ERD schema created using Quick Database Diagrams.
+- **crowdfund_db_schema.sql**: SQL file for creating tables and joining data in PostgreSQL. Queries are included for checking table data.
+- **02-project.md**: Course-provided instructions for completing the project.
+- `Resources` folder: Contains cleaned csv files for loading into PostgreSQL and provided source data in xlsx format for analysis.
+- `screenshots` folder: Contains images of working tables in PostgreSQL.
 
 ## Usage
 
 1. Clone the repository to your local machine.
-2. In your terminal, navigate to the `Resources` folder.
-3. Run the following command to import the dataset into MongoDB: `mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json`
-4. Execute the code in the NoSQL_setup_starter.ipynb file to load the uk_food database and establishments collection. The file will also clean up and standardize various sets of information.
-5. Execute the code in the NoSQL_analysis_starter.ipynb file to run the analysis on the dataset.
+2. Execute the code until the `Create the Contacts Dataframe` section. From there, you will have two options to create the same end file, but they cannot be run sequentially. If choosing option one, you will need to restart your notebook to execute option two.
+3. Open PostgreSQL software and create tables with the schema portion of the code. Import the data for the tables using the appropriate CSV files in the `Resources` folder.
+4. Run the queries to check table load.
 
 ## Dependencies
 
 - pandas
-- pprint
-- pymongo
+- json
+- numpy
+- datetime
+- re
